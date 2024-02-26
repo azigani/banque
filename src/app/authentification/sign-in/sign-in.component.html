@@ -1,0 +1,17 @@
+<form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
+<div class="">
+  <label for="">Login</label>
+  <input type="text" formControlName="login">
+</div>
+
+  <div class="">
+  <label for="">Mot de passe</label>
+  <input type="password" formControlName="password">
+</div>
+
+  <div>
+<!--  <label>Mot de passe</label>-->
+    <button type="submit" [disabled]="signInForm.invalid"> Se connecter</button>
+</div>
+
+</form>
